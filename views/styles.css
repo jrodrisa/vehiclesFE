@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title{
+    margin: 20px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.tabledisplays{
+    width: 550px;
+    padding-top: 20px;
+}
+
+#formcontainer{
+    display: none;
+}

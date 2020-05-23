@@ -1,0 +1,110 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="../models/car.js"></script>
+  <script src="../models/wheel.js"></script>
+  <script src="../controllers/controller.js"></script>
+</head>
+
+<body id="body">
+  <div id="container" class="text-center">
+    <div class="title">
+      <h1>Create a car</h1>
+    </div>
+    <form class="form">
+      <div class="form-row">
+        <div class="col">
+          <label for="plate">Plate</label>
+          <input type="text" id="plate" class="form-control">
+          <div class="invalid-feedback" id="plateError"></div>
+        </div>
+        <div class="col">
+          <label for="brand">Brand</label>
+          <input type="text" id="brand" class="form-control">
+          <div class="invalid-feedback" id="brandError"></div>
+        </div>
+        <div class="col">
+          <label for="color">Color</label>
+          <input type="text" id="color" class="form-control">
+          <div class="invalid-feedback" id="colorError"></div>
+        </div>
+      </div>
+    </form>
+    <div>
+      <button class="button btn btn-primary" onclick="createCar()">Create Car</button>
+    </div>
+  </div>
+
+  <div id="formcontainer" class="text-center">
+    <form class="form"  id="wheelForm">
+      <div class="form-group row">
+        <div class="col">
+          <label for="1stwheel">1st Wheel's Brand</label>
+          <input type="text" id="1wheelb" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorB1"></div>
+        </div>
+        <div class="col">
+          <label for="2ndwheel">2nd Wheel's Brand</label>
+          <input type="text" id="2wheelb" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorB2"></div>
+        </div>
+        <div class="col">
+          <label for="3rdwheel">3rd Wheel's Brand</label>
+          <input type="text" id="3wheelb" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorB3"></div>
+        </div>
+        <div class="col">
+          <label for="3rdwheel">4th Wheel's Brand</label>
+          <input type="text" id="4wheelb" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorB4"></div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <label for="1stwheel">1st Wheel's Diameter</label>
+          <input type="text" id="1wheeld" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorD1"></div>
+        </div>
+        <div class="col">
+          <label for="2ndwheel">2nd Wheel's Diameter</label>
+          <input type="text" id="2wheeld" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorD2"></div>
+        </div>
+        <div class="col">
+          <label for="3rdwheel">3rd Wheel's Diameter</label>
+          <input type="text" id="3wheeld" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorD3"></div>
+        </div>
+        <div class="col">
+          <label for="3rdwheel">4th Wheel's Diameter</label>
+          <input type="text" id="4wheeld" class="form-control">
+          <div class="invalid-feedback" id="wheelErrorD4"></div>
+        </div>
+      </div>
+    </form>
+    <div class="form-group row" id="wheelButton">
+      <div class="col d-flex justify-content-center">
+        <button class="btn btn-primary" onclick="addwheel()">Add Wheels</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabledisplays">
+    <div class="text-center" id="tablecontainer"></div>
+    <table class="table table-bordered text-center" id="carTable"></table>
+    <div class="text-center" id="wtablecontainer"></div>
+    <table class="table table-bordered text-center" id="wheelsTable"></table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
